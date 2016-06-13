@@ -14,6 +14,7 @@ class CoffeeLintBear:
     """
 
     LANGUAGES = "CoffeeScript"
+    CAN_DETECT = 'Syntax', 'Formatting', 'Smell'
 
     severity_map = {'warn': RESULT_SEVERITY.NORMAL,
                     'error': RESULT_SEVERITY.MAJOR}
