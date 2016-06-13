@@ -7,7 +7,9 @@ from coalib.settings.Setting import path
         output_regex=r'.+:(?P<line>\d+): (?P<message>.*)')
 class CMakeLintBear:
     """
-    Checks the code with ``cmakelint``.
+    Check CMake code for syntactical or formatting issues.
+
+    For more information consult <https://github.com/richq/cmake-lint>.
     """
     LANGUAGES = 'CMake'
     CAN_DETECT = 'Syntax', 'Formatting'
