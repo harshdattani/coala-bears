@@ -10,6 +10,7 @@ class CMakeLintBear:
     Checks the code with ``cmakelint``.
     """
     LANGUAGES = 'CMake'
+    CAN_DETECT = 'Syntax', 'Formatting'
 
     @staticmethod
     def create_arguments(filename, file, config_file,
